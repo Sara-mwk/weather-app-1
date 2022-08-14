@@ -24,7 +24,6 @@ return `${day} ${hours}:${minutes}`;
 
 
 function displayTemperature(response) {
-    console.log(response.data);
     let temperatureElement = document.querySelector("#temperature");
     let cityElement = document.querySelector("#city");
     let descriptionElement = document.querySelector("#description");
@@ -42,10 +41,20 @@ function displayTemperature(response) {
     iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
-
+function search(city) {
 let apiKey = "8cfa4dd3ccafa97ae01716474ab8d486";
-let city = "Omaha";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metrics`;
-
-console.log(apiUrl);
 axios.get(apiUrl).then(displayTemperature);
+}
+
+
+function handleSubmit(event) {
+    event.preventDefault();
+    let cityInputElement = document.querySelector("#city-input");
+    search(cityInputElement.value);
+}
+
+let city = "Omaha";
+
+let form = document.querySelector("search-form");
+form.addEventListener("submit", handleSubmit);
