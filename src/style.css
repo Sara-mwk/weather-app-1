@@ -68,3 +68,26 @@ h1 {
   }
   
 
+	.weather-forecast {
+	  margin-top: 20px;
+	  text-align: center;
+	  color: #000;
+	}
+	
+
+	.weather-forecast-date {
+	  font-size: 16px;
+	  text-align: center;
+	  opacity: 0.5;
+	}
+	
+
+	.weather-forecast-temp-low {
+	  opacity: 0.5;
+    color: rgb(135, 135, 135);
+	}
+	
+
+	.weather-forecast-temperatures {
+	  font-size: 13px;
+	}
