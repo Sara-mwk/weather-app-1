@@ -90,13 +90,13 @@ h1 {
 	  opacity: 0.5;
 	}
 	
-
-	.weather-forecast-temp-low {
+	.weather-forecast-temperatures {
+	  font-size: 13px;
+	}
+	.weather-forecast-temperature-min {
 	  opacity: 0.5;
     color: rgb(135, 135, 135);
 	}
 	
 
-	.weather-forecast-temperatures {
-	  font-size: 13px;
-	}
+
