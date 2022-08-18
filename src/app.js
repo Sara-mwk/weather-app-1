@@ -126,4 +126,4 @@ forecastHTML = forecastHTML + `</div>`;
 
    search("Omaha");
 
-   displayForecast();
+   displayForecast(response);
