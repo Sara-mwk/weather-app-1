@@ -20,6 +20,8 @@ function formatDate(timestamp) {
     let day = days[date.getDay()];
     return `${day} ${hours}:${minutes}`;
     }
+
+    
     
     function displayForecast(response) {
         let forecast = response.data.daily;
@@ -37,8 +39,8 @@ function formatDate(timestamp) {
     <div class="weather-forecast-date">${forecastDay.dt}</div>
     <img src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png"alt width="42">
     <div class="weather-forecast-temperatures">
-     <span class="weather-forecast-temperature-max">${forecastDay.temperature.max}° </span> /  
-     <span class="weather-forecast-temperature-min"> ${forecastDay.temperature.min}° </span>
+     <span class="weather-forecast-temperature-max">${forecastDay.temperature.max}°</span> /  
+     <span class="weather-forecast-temperature-min"> ${forecastDay.temperature.min}°</span>
  </div>
 </div>
 `;
@@ -128,4 +130,4 @@ forecastHTML + `</div>`;
 
    search("Omaha");
 
-   displayForecast(response);
+   
