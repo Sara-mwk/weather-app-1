@@ -144,5 +144,6 @@ forecastHTML + `</div>`;
    celsiusLink.addEventListener("click", displaycelsiusLinkTemperature);
 
    search("Omaha");
-
+   
+   
    
